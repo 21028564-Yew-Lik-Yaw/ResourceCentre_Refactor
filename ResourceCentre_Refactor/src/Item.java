@@ -11,10 +11,12 @@ public class Item {
 		this.dueDate = "";
 		this.isAvailable = true;
 	}
-	public String toString() {
-		
-		// Write your codes here
-		return null;
+	public String toString() {		
+		return String.format("%-10s %-30s %-10s %-10s", getAssetTag(), getDescription(), showAvailability(getIsAvailable()),getDueDate());
+	}
+
+	private Object showAvailability(boolean isAvailable2) {
+		return null;  //how does this work
 	}
 	public String getAssetTag() {
 		return assetTag;
